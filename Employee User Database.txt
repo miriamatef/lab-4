@@ -1,0 +1,7 @@
+1003,Mariam,mariam.fayez@yahoo.com,Smouha,01277889900
+1004,John,john.adel@gmail.com,Nasr City,01098765432
+1007,Dina,dina.samir@hotmail.com,Maadi,01133445566
+1008,George,george.atef@gmail.com,Mansoura,01299887766
+1013,Adel,adel.samir@gmail.com,Helwan,01151515151
+1224,koka,koka@gmail.com,smouha,01273081539
+123,suzy,suzy@gmail,kafr,abdo
