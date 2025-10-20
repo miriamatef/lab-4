@@ -20,15 +20,15 @@ Scanner input = new Scanner(System.in);
 
 ProductDatabase productDB = new ProductDatabase("Product.txt");
 CustomerProductDatabase customerDB = new CustomerProductDatabase("CustomerProducts.txt");
-EmployeeUserDatabase employeeDB = new EmployeeUserDatabase("lab4.txt");
+EmployeeUserDatabase employeeDB = new EmployeeUserDatabase("Employee User Database.txt");
 
 productDB.readFromFile("Product.txt");
 customerDB.readFromFile();
-employeeDB.readFromFile("lab4.txt");
+employeeDB.readFromFile("Employee User Database.txt");
 
 //Admin and Employee setup examples
 AdminRole admin = new AdminRole("Ali", "Ali@store.com", "Alexandria", "01055556666","Employees.txt");
-EmployeeRole employee = new EmployeeRole("Mazen", "mazen@store.com", "Cairo", "01077778888","Proctucts.txt","Customer Product.txt");
+EmployeeRole employee = new EmployeeRole("Mazen", "mazen@store.com", "Cairo", "01077778888","Product.txt","CustomerProducts.txt");
 
 DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 
