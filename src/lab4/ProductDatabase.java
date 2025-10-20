@@ -32,4 +32,3 @@ public class ProductDatabase extends Database<Product> {
     }
 }
 
-

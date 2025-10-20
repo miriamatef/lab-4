@@ -23,8 +23,8 @@ public class EmployeeRole extends User{
         super(name, email, address, phoneNumber);
         this.productsDatabase = new ProductDatabase(productFile);
         this.customerProductDatabase = new CustomerProductDatabase(customerProductFile);
-        productsDatabase.readFromFile();
-        customerProductDatabase.readFromFile();
+        productsDatabase.readFromFile("Products.txt");
+        customerProductDatabase.readFromFile("CustomerProducts.txt");
     }
 
     //  Add product
@@ -131,9 +131,9 @@ public class EmployeeRole extends User{
 
         return paid;
     }
-
+    EmployeeUser emp;
     @Override
     public void logout() {
-        System.out.println("Employee " + name + " logged out.");
+        System.out.println("Employee " + emp.getName() + " logged out.");
     }
 }
