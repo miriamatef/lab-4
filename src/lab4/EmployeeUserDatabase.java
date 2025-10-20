@@ -4,7 +4,6 @@
  */
 package lab4;
 
-import java.util.StringTokenizer;
 
 
 /**
@@ -19,7 +18,15 @@ public class EmployeeUserDatabase extends Database<EmployeeUser>{
 
     @Override
     public EmployeeUser createRecordFrom(String line){
-        String[] parts = line.split(",");
+         if (line == null || line.trim().isEmpty()) {
+        System.out.println("Empty or null line");
+        return null;
+    }
+    String[] parts = line.split(",");
+    if (parts.length < 5) {
+        System.out.println("Invalid line format: " + line);
+        return null;
+    }
         EmployeeUser emp = new EmployeeUser(parts[0].trim(),parts[1].trim(),parts[2].trim(),parts[3].trim(),parts[4].trim());
         return emp;
     }
@@ -28,4 +35,5 @@ public class EmployeeUserDatabase extends Database<EmployeeUser>{
     public String getKey(EmployeeUser line){
         return line.getId();
     }
+
 }

@@ -1,0 +1,5 @@
+E1001,ali,Ali@store.com,Alexandria,01055556666
+E1002,Mazen,mazen@store.com,Cairo,01077778888
+E1003,Hany,hany@store.com,Mansoura,01033334444
+E1004,Mariam,mariam@store.com,Tanta,01011112222
+E1005,Ahmed,ahmed@store.com,Giza,01099998888

@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package lab4_final;
+package lab4;
 
 /**
  *
@@ -18,7 +18,7 @@ public class AdminRole extends User {
     public AdminRole(String name, String email, String address, String phoneNumber, String employeeFile) {
         super(name, email, address, phoneNumber);
         this.employeeDatabase = new EmployeeUserDatabase(employeeFile);
-        employeeDatabase.readFromFile(); // Load existing data
+        employeeDatabase.readFromFile("Employee User Database");
     }
 
     //  Add new employee
@@ -50,9 +50,9 @@ public class AdminRole extends User {
             System.out.println("Employee with ID " + employeeId + " not found.");
         }
     }
-
+    User u;
     @Override
     public void logout() {
-        System.out.println("Admin " + name + " logged out.");
+        System.out.println("Admin " + u.getName() + " logged out.");
     }
 }
